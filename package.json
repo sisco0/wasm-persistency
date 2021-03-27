@@ -4,6 +4,7 @@
   "description": "This project tries to reach persistency at the filesystem used by Wasm under NodeJS and WebAssembly compatible browsers. Internally, it uses Emscripten to compile the library with C++, after that, a TypeScript bundle is used for NodeJs and for browsers (Webpacked).",
   "main": "index.js",
   "scripts": {
+    "astyle": "astyle --options=.astylerc \"src/cpp/*.cpp\" \"src/cpp/*.h\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
