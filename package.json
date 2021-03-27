@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "astyle": "astyle --options=.astylerc \"src/cpp/*.cpp\" \"src/cpp/*.h\"",
+    "build:cpp": "emcmake cmake src/cpp -Bbuild/cpp; emmake make -C build/cpp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
